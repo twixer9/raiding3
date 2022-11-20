@@ -11,10 +11,12 @@ public class GoldRaids {
         int balance = sc.nextInt();
         System.out.println("Enter your credit card limit");
         int limit = sc.nextInt();
-        CreditCard obj = new CreditCard (name, email, balance, limit);
+
         System.out.println("Enter the amount you would like to add on to your card");
         int amount = sc.nextInt();
+        CreditCard obj = new CreditCard (name, email, balance, limit);
         obj.increaseBalance(amount);
+        obj.returnAmount(amount);
         System.out.println(obj);
 
 
